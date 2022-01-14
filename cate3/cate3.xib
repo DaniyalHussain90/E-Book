@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wB9-hD-zdV">
-                                <rect key="frame" x="25" y="51" width="488" height="200"/>
+                                <rect key="frame" x="0.0" y="51" width="513" height="200"/>
                                 <color key="backgroundColor" red="0.91764706370000004" green="0.97647058959999999" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.91764706370000004" green="0.97647058959999999" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -43,31 +43,23 @@
                                 <rect key="frame" x="352" y="12" width="65" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blob3" translatesAutoresizingMaskIntoConstraints="NO" id="YBf-Uq-QSa">
-                                <rect key="frame" x="184" y="16" width="65" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blob3" translatesAutoresizingMaskIntoConstraints="NO" id="Vh4-cO-Bx2">
-                                <rect key="frame" x="-20" y="94" width="65" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blob3" translatesAutoresizingMaskIntoConstraints="NO" id="G6V-7m-HC3">
                                 <rect key="frame" x="448" y="16" width="65" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blob3" translatesAutoresizingMaskIntoConstraints="NO" id="ggH-WJ-JUG">
-                                <rect key="frame" x="-21" y="167" width="65" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blob3" translatesAutoresizingMaskIntoConstraints="NO" id="sgM-xP-Box">
                                 <rect key="frame" x="269" y="12" width="65" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blob3" translatesAutoresizingMaskIntoConstraints="NO" id="YBf-Uq-QSa">
+                                <rect key="frame" x="185" y="12" width="65" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.91764706370000004" green="0.97647058959999999" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="k55-0d-Ruw" firstAttribute="top" secondItem="UPz-Zh-JAX" secondAttribute="top" constant="13" id="Iv6-Hv-gl2"/>
-                            <constraint firstItem="wB9-hD-zdV" firstAttribute="leading" secondItem="UPz-Zh-JAX" secondAttribute="leading" constant="25" id="Mq6-3K-iuT"/>
+                            <constraint firstItem="wB9-hD-zdV" firstAttribute="leading" secondItem="UPz-Zh-JAX" secondAttribute="leading" id="Mq6-3K-iuT"/>
                             <constraint firstAttribute="height" constant="268" id="QSf-oY-HTN"/>
                             <constraint firstItem="wB9-hD-zdV" firstAttribute="top" secondItem="k55-0d-Ruw" secondAttribute="bottom" constant="12.5" id="ZJI-ab-zhz"/>
                             <constraint firstItem="k55-0d-Ruw" firstAttribute="leading" secondItem="UPz-Zh-JAX" secondAttribute="leading" constant="10" id="gld-MF-kvh"/>

@@ -7,7 +7,7 @@
 
 import Foundation
 import Alamofire
-import Kingfisher
+import SDWebImage
 
 
 class bookManager {

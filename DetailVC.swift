@@ -10,6 +10,8 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var image = UIImage()
     var blueLabel = ""
     var blueLabel1 = ""
+    var imgView = UIImage()
+   
     
     @IBOutlet weak var tableView3: UITableView!
     override func viewDidLoad() {
@@ -42,8 +44,17 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell?.imgView2.image = image
         cell?.blueLabel.text = blueLabel
         cell?.blueLabel1.text = blueLabel1
+        cell?.addCart.addTarget(self, action: #selector(addCart), for: .touchUpInside)
+      
         return cell!
     }
     
-  
+    @objc func addCart  (sender: UIButton){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let myvc = storyBoard.instantiateViewController(withIdentifier: "cartViewController") as? cartViewController
+        myvc?.imgView  = image
+        myvc?.label1 = blueLabel
+        myvc?.Label2 = blueLabel1
+        self.navigationController?.pushViewController(myvc!, animated: true)
+    }
 }

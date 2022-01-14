@@ -88,7 +88,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="WD0-Tf-JIE">
-                                <rect key="frame" x="11" y="487" width="403" height="250"/>
+                                <rect key="frame" x="0.0" y="487" width="414" height="250"/>
                                 <color key="backgroundColor" red="0.91764706370000004" green="0.97647058959999999" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="YQ3-Fq-Q7b"/>
@@ -183,7 +183,7 @@
                             <constraint firstItem="uvG-JF-hkj" firstAttribute="leading" secondItem="bij-Li-XNa" secondAttribute="trailing" constant="26" id="73h-Fd-BK0"/>
                             <constraint firstItem="GFM-w4-xWH" firstAttribute="top" secondItem="uvG-JF-hkj" secondAttribute="bottom" constant="8" symbolic="YES" id="93K-cR-td8"/>
                             <constraint firstItem="DqJ-iW-u42" firstAttribute="leading" secondItem="bij-Li-XNa" secondAttribute="trailing" constant="26" id="9KD-XQ-X5q"/>
-                            <constraint firstItem="WD0-Tf-JIE" firstAttribute="leading" secondItem="atX-RN-aqd" secondAttribute="leading" constant="11" id="9dx-Ci-3Ib"/>
+                            <constraint firstItem="WD0-Tf-JIE" firstAttribute="leading" secondItem="atX-RN-aqd" secondAttribute="leading" id="9dx-Ci-3Ib"/>
                             <constraint firstItem="WD0-Tf-JIE" firstAttribute="top" secondItem="Wlj-P7-d6B" secondAttribute="bottom" constant="7.5" id="FIG-UH-4UY"/>
                             <constraint firstItem="VaN-Oe-zlG" firstAttribute="leading" secondItem="bij-Li-XNa" secondAttribute="trailing" constant="15" id="JV2-ag-Yu4"/>
                             <constraint firstAttribute="trailing" secondItem="wR0-SN-WPQ" secondAttribute="trailing" id="LpU-3a-bDP"/>
