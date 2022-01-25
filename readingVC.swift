@@ -17,16 +17,16 @@ class readingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var lable1 = ""
     var lable2 = ""
+    var label3 = ""
     var url = ""
     var data = [String]()
+    var country = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView2.dataSource = self
         tableView2.dataSource = self
-        bookManager.shared.getAllBooksImageForm(limit: 0) { Image, title, Publisher in
        
-        }
         
          
         let nibcell=UINib(nibName: "readingTableView", bundle: nil)
@@ -55,6 +55,7 @@ class readingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell!.imgeReading.sd_setImage(with:URL(string: self.url))
         cell?.lable1.text = self.lable1
         cell?.lable2.text = self.lable2
+        cell?.label3.text = self.country
         
         cell?.viewcontroller = self
             return cell!

@@ -15,6 +15,7 @@ class cartViewController: UIViewController, UITableViewDelegate, UITableViewData
     var Label2 = ""
     var Label3 = ""
     var data = ""
+    var country = ""
     
     @IBOutlet weak var tableView6: UITableView!
     override func viewDidLoad() {

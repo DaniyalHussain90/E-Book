@@ -16,6 +16,7 @@ class cate3: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSour
     var data = [String]()
     var data1 = [String]()
     var data2 = [String]()
+    var country = [String]()
  //   var it = [data?.items]
 
     @IBOutlet weak var imageCollection: UICollectionView!
@@ -30,11 +31,13 @@ class cate3: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSour
         imageCollection.delegate = self
         let nibcell=UINib(nibName: "itemCollection", bundle: nil)
          imageCollection.register(nibcell, forCellWithReuseIdentifier:"itemCollection")
-        bookManager.shared.getAllBooksImageForm(limit: 0) { Image,Title,publisher in
+        bookManager.shared.getAllBooksImageForm(limit: 0) { Image,Title,publisher, country in
            
             self.data = Image
             self.data1 = Title
             self.data2 = publisher
+            self.country = country
+       
             self.imageCollection.reloadData()
             
         }
@@ -92,6 +95,7 @@ class cate3: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSour
         myvc.url = self.data[indexPath.row]
         myvc.lable1 = data1[indexPath.row]
         myvc.lable2 = data2[indexPath.row]
+        myvc.country = country[indexPath.row]
         self.viewcontroller.navigationController?.pushViewController(myvc, animated: true)
         
     }

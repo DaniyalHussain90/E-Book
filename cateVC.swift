@@ -14,6 +14,7 @@ class cateVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var data = [String]()
     var data1 = [String]()
     var data2 = [String]()
+    var country = [String]()
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {

@@ -16,12 +16,13 @@ class bookManager {
         fileprivate var baseUrl = "https://www.googleapis.com/books/v1/volumes?q=search+term"
    
         
-    func  getAllBooksImageForm (limit: Int,completion:@escaping([String] , [String] ,[String])->Void){
+    func  getAllBooksImageForm (limit: Int,completion:@escaping([String] , [String] ,[String], [String])->Void){
 
         var arr = [String]()
         var books = [books]()
         var title = [String]()
         var publisher = [String]()
+        var country1 = [String]()
          //   let params = ["api_key": "ZqcLdmkS6ye8xtZo8lxk7I6fJob6FCmpk6erzmDf", "search":"receivedate:[20040101+TO+20081231]","limit": "\(limit)"]
             
             AF.request(self.baseUrl).responseJSON { response in
@@ -54,18 +55,26 @@ class bookManager {
                            
                            if let title1 = volumeInfo["title"] as? String{
                                let publisher1 = volumeInfo["publisher"] as? String
-                               title.append(title1)
-                               publisher.append(publisher1 ?? "")
-                               arr.append(smallThumbnail ?? "")
-                           //    completion(arr,[],[])
-                               completion(arr,title,publisher)
+                       
+                               if let country = item["accessInfo"] as? [String:Any] {
+                               let country = country["country"] as? String
+                                   country1.append(country!)
+                                   title.append(title1)
+                                   publisher.append(publisher1 ?? "")
+                                 
+                                   arr.append(smallThumbnail ?? "")
+                               //    completion(arr,[],[])
+                                   completion(arr,title,publisher,country1)
+                               }
+                             //  saleability.append(saleinfo1)
+                            
                             }
                           
                         }
                  
                     }
 
-
+                  
             }
     //        AF.request(self.baseUrl+"?search=receivedate:[20040101+TO+20081231]&limit=10", method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil, requestModifier: nil).response { DataResponse in
     //            guard let data = DataResponse.data else {return}

@@ -12,10 +12,12 @@ class detailTableview: UITableViewCell {
     var data = [String]()
     var data1 = [String]()
     var data2 = [String]()
+    var country = [String]()
    
     
     @IBOutlet weak var blueLabel: UILabel!
     @IBOutlet weak var blueLabel1: UILabel!
+    @IBOutlet weak var blueLabel3: UILabel!
     @IBOutlet weak var imgView2: UIImageView!
     @IBOutlet weak var moreButton: UIButton!
     @IBOutlet weak var textView: UITextView!

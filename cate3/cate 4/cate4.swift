@@ -19,7 +19,7 @@ class cate4: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        bookManager.shared.getAllBooksImageForm(limit: 0) { image,title,publisher in
+        bookManager.shared.getAllBooksImageForm(limit: 0) { image,title,publisher,Country in
             self.data = image
             self.data1 = title
             self.data2 = publisher

@@ -10,7 +10,9 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var image = UIImage()
     var blueLabel = ""
     var blueLabel1 = ""
+    var blueLabel3 = ""
     var imgView = UIImage()
+    var country = ""
    
     
     @IBOutlet weak var tableView3: UITableView!
@@ -44,6 +46,7 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell?.imgView2.image = image
         cell?.blueLabel.text = blueLabel
         cell?.blueLabel1.text = blueLabel1
+        cell?.blueLabel3.text = blueLabel3
         cell?.addCart.addTarget(self, action: #selector(addCart), for: .touchUpInside)
       
         return cell!
@@ -55,6 +58,7 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         myvc?.imgView  = image
         myvc?.label1 = blueLabel
         myvc?.Label2 = blueLabel1
+        myvc?.Label3 = blueLabel3
         self.navigationController?.pushViewController(myvc!, animated: true)
     }
 }

@@ -15,8 +15,10 @@ class readingTableView: UITableViewCell, UICollectionViewDelegate, UICollectionV
     var data = [String]()
     var data1 = [String]()
     var data2 = [String]()
+    var country = [String]()
     @IBOutlet weak var lable1: UILabel!
     @IBOutlet weak var lable2: UILabel!
+    @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var imgeReading: UIImageView!
     @IBOutlet weak var detailButton: UIButton!
     var viewcontroller = readingVC()
@@ -31,7 +33,7 @@ class readingTableView: UITableViewCell, UICollectionViewDelegate, UICollectionV
         
         collectionView.dataSource = self
         collectionView.delegate = self
-        bookManager.shared.getAllBooksImageForm(limit: 0) { Image,title,publisher  in
+        bookManager.shared.getAllBooksImageForm(limit: 0) { Image,title,publisher,country in
            // self.data.removeAll()
           
          //   bookManager.shared.getAllBooksNameForm(limit: 0) { title, publisher  in
@@ -42,6 +44,7 @@ class readingTableView: UITableViewCell, UICollectionViewDelegate, UICollectionV
             //    self.collectionView.reloadData()
                self.data1 = title
                 self.data2 = publisher
+            self.country = country
                 self.collectionView.reloadData()
         //    }
             
@@ -71,6 +74,7 @@ class readingTableView: UITableViewCell, UICollectionViewDelegate, UICollectionV
             cell!.picView.sd_setImage(with:url)
             cell?.name1.text = data1[indexPath.row]
             cell?.name2.text = data2[indexPath.row]
+         
                 return cell!
         
     }
@@ -83,6 +87,7 @@ class readingTableView: UITableViewCell, UICollectionViewDelegate, UICollectionV
         myvc.url = self.data[indexPath.row]
         myvc.lable1 = data1[indexPath.row]
         myvc.lable2 = data2[indexPath.row]
+        myvc.label3 = country[indexPath.row]
         self.viewcontroller.navigationController?.pushViewController(myvc, animated: true)
         
        
@@ -97,6 +102,7 @@ class readingTableView: UITableViewCell, UICollectionViewDelegate, UICollectionV
         myvc.image = imgeReading.image!
         myvc.blueLabel = lable1.text!
         myvc.blueLabel1 = lable2.text!
+        myvc.blueLabel3 = label3.text!
         self.viewcontroller.navigationController?.pushViewController(myvc, animated: true)
         
 }
