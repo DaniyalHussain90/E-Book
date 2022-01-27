@@ -9,11 +9,15 @@ import UIKit
 import Kingfisher
 import SDWebImage
 import SwiftUI
-class readingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+import ASPVideoPlayer
+import AVFoundation
+class readingVC: UIViewController, UITableViewDelegate, UITableViewDataSource, ASPVideoPlayerViewDelegate {
    
 
     @IBOutlet weak var tableView2: UITableView!
    
+    
+  
     
     var lable1 = ""
     var lable2 = ""
@@ -27,8 +31,9 @@ class readingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView2.dataSource = self
         tableView2.dataSource = self
        
+       
+      
         
-         
         let nibcell=UINib(nibName: "readingTableView", bundle: nil)
         tableView2.register(nibcell, forCellReuseIdentifier: "readingTableView")
        
@@ -56,8 +61,12 @@ class readingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell?.lable1.text = self.lable1
         cell?.lable2.text = self.lable2
         cell?.label3.text = self.country
-        
+        cell?.videoPlayer.delegate = self
+        let firstNetworkURL = URL(string: "https://firebasestorage.googleapis.com/v0/b/cvoom-app.appspot.com/o/recordings%2Fcvoom_730501.mp4?alt=media&token=e8a27c29-fc7a-4c5e-9ba3-d6bacfee20cc")
+        let firstAsset = AVURLAsset(url: firstNetworkURL!)
+        cell?.videoPlayer.videoAssets = [firstAsset]
         cell?.viewcontroller = self
+        
             return cell!
     }
     

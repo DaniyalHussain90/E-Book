@@ -9,6 +9,7 @@ import UIKit
 import SDWebImage
 import Cosmos
 import SwiftUI
+import ASPVideoPlayer
 
 class readingTableView: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
@@ -23,6 +24,7 @@ class readingTableView: UITableViewCell, UICollectionViewDelegate, UICollectionV
     @IBOutlet weak var detailButton: UIButton!
     var viewcontroller = readingVC()
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var videoPlayer: ASPVideoPlayer!
     
     
     
