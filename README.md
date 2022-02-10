@@ -28,7 +28,7 @@ https://www.googleapis.com/books/v1/volumes?q=search+term
 
 https://firebasestorage.googleapis.com/v0/b/trav-80401.appspot.com/o/no-image.png?alt=media&token=d5a0a91e-1396-4c7a-ad0b-049cae0ca778
 
-# 3 Party libraries:
+# 3rd Party libraries:
 
    pod 'GoogleSignIn'
    
