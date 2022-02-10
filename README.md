@@ -7,13 +7,13 @@ Discover Books           |  Books Detail         | Buy Books
 
 
 # Use Case: 
-1. people can come to the App to Discover their favourites book on the main time line.
+1. People can come to the App to discover their favouritebook on the main timeline.
 
-2. people can login to the App in order to save books and order accordingly.
+2. People can login to the App in order to save books and order accordingly.
 
-3. people can buy books when they are login.
+3. People can buy books when they are login.
 
-4. people can watch videos of their favourite authors.
+4. People can watch videos of their favourite authors.
 
 # Back End:
 1. Rest Api.
