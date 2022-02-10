@@ -1,5 +1,5 @@
 
-# Screen Shots:
+# Screenshots:
 
 Discover Books           |  Books Detail         | Buy Books 
 :-------------------------:|:-------------------------:|:-------------------------:
