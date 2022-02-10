@@ -7,9 +7,9 @@ Discover Books           |  Books Detail         | Buy Books
 
 
 # Use Case: 
-1. People can come to the App to discover their favouritebook on the main timeline.
+1. People can come to the App to discover their favourite book on the main timeline.
 
-2. People can login to the App in order to save books and order accordingly.
+2. People can login to the App to save books and order accordingly.
 
 3. People can buy books when they are login.
 
