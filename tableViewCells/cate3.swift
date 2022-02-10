@@ -12,7 +12,8 @@ import SwiftUI
 class cate3: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
-
+    
+    let spinner = UIActivityIndicatorView()
     var data = [String]()
     var data1 = [String]()
     var data2 = [String]()
@@ -103,5 +104,7 @@ class cate3: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 100, height: 200)
     }
+    
 }
+
 

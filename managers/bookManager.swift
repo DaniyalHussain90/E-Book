@@ -45,11 +45,7 @@ class bookManager {
 
                 for item in items ?? []{
                     if let volumeInfo = item["volumeInfo"] as? [String:Any] {
-                      //  if let volumeInfo = item["volumeInfo"] as? [String:Any] {
-                         
-                          
-
-                      //  }
+               
                        if let imageInfo = volumeInfo["imageLinks"] as? [String:Any]{
                            let smallThumbnail = imageInfo["smallThumbnail"] as? String
                            

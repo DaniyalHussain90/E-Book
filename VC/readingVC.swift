@@ -62,7 +62,7 @@ class readingVC: UIViewController, UITableViewDelegate, UITableViewDataSource, A
         cell?.lable2.text = self.lable2
         cell?.label3.text = self.country
         cell?.videoPlayer.delegate = self
-        let firstNetworkURL = URL(string: "https://firebasestorage.googleapis.com/v0/b/cvoom-app.appspot.com/o/recordings%2Fcvoom_730501.mp4?alt=media&token=e8a27c29-fc7a-4c5e-9ba3-d6bacfee20cc")
+        let firstNetworkURL = URL(string: "https://firebasestorage.googleapis.com:443/v0/b/cvoom-app.appspot.com/o/recordings%2FIOS%2F1.0.3%2Fcvoom_2273131.mp4?alt=media&token=96fab5b1-af84-4707-8f8e-62731a8786b8")
         let firstAsset = AVURLAsset(url: firstNetworkURL!)
         cell?.videoPlayer.videoAssets = [firstAsset]
         cell?.viewcontroller = self

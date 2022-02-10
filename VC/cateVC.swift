@@ -8,25 +8,30 @@
 import UIKit
 import Kingfisher
 import SDWebImage
+import MBProgressHUD
+import WebKit
+import SwiftUI
 
-class cateVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class cateVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     var data = [String]()
     var data1 = [String]()
     var data2 = [String]()
     var country = [String]()
+  
     
     @IBOutlet weak var tableView: UITableView!
+    var refreshControl = UIRefreshControl()
+    let spinner = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-      
-    //    bookManager.shared.getAllBooksNameForm(limit: 0) { title, publisher  in
-            
-     //   }
+        refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
+        tableView.addSubview(refreshControl)
         
-        
+     
+   
         let nibcell=UINib(nibName: "categoriesTableView", bundle: nil)
         tableView.register(nibcell, forCellReuseIdentifier: "categoriesTableView")
        
@@ -36,8 +41,17 @@ class cateVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         tableView.register(nibcell2, forCellReuseIdentifier: "cate3")
         let nibcell3=UINib(nibName: "cate4", bundle: nil)
         tableView.register(nibcell3, forCellReuseIdentifier: "cate4")
-            
+}
+    
+     @objc func refresh(send: UIRefreshControl){
+         DispatchQueue.main.async {
+             self.tableView.reloadData()
+             self.refreshControl.endRefreshing()
+         }
     }
+   
+ 
+  
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
@@ -101,6 +115,7 @@ class cateVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     
+   
   //  @objc func loginTableview  (sender: UIButton){
       
    // }
