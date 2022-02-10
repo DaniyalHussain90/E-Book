@@ -1,9 +1,17 @@
+
+# Screen Shots:
+
+Discover Books           |  Books Detail         | Buy Books 
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/81240553/153417314-8ec43352-bd4d-4ffd-8a24-c0280d54ab3a.png)  |  ![](https://user-images.githubusercontent.com/81240553/153417459-397a9571-6c2f-4e77-bd79-5c517070d4b9.png) | ![](https://user-images.githubusercontent.com/81240553/153417461-3e78ea81-fb51-499c-8c7f-fe933be39800.png)
+
+
 # Use Case: 
 1. people can come to the aap to Discover their favourites book on the main time line.
 
 2. people can login to the aap in order to save books and order accordingly.
 
-3. people can by books when they are login.
+3. people can buy books when they are login.
 
 4. people can watch videos of their favourite authors.
 
@@ -31,6 +39,7 @@ https://firebasestorage.googleapis.com/v0/b/trav-80401.appspot.com/o/no-image.pn
    pod 'Alamofire', '~> 5.4'
    
    pod 'Kingfisher', '~> 7.0'
+
    
    pod 'SDWebImage/MapKit'
    
