@@ -7,9 +7,9 @@ Discover Books           |  Books Detail         | Buy Books
 
 
 # Use Case: 
-1. people can come to the aap to Discover their favourites book on the main time line.
+1. people can come to the App to Discover their favourites book on the main time line.
 
-2. people can login to the aap in order to save books and order accordingly.
+2. people can login to the App in order to save books and order accordingly.
 
 3. people can buy books when they are login.
 
